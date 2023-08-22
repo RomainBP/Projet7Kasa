@@ -1,0 +1,10 @@
+.star {
+    width: 36px;
+    height: 36px;
+    padding: 5px;
+    @include mobile-only {
+        width: 24px;
+        height: 24px;
+        padding: 2px;
+    }
+}

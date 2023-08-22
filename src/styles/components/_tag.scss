@@ -1,0 +1,17 @@
+.tag-wrapper {
+    width: 100%;
+    display: flex;
+    flex-basis: auto;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    .tag-wrapper__contenant {
+        background: $primary-color;
+        color: $secondary-color;
+        border-radius: 15px;
+        margin-right: 10px;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+    }
+}

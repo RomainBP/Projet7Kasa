@@ -1,0 +1,15 @@
+* {
+    font-family: 'Montserrat', 'Trebuchet MS', Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 40px 100px;
+    max-width: 1440px;
+    @include mobile-only {
+        margin: 10px;
+    }
+    font-weight: 100;
+}
