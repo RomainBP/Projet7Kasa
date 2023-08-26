@@ -1,14 +1,12 @@
-import ConcerningIllustration from '../../assets/ConcerningIllustration.svg'
 import Collapse from '../../components/Collapse'
 import { kasaInformations } from '../../datas/kasaInformations'
+import Banner from '../../components/Banner'
 
 function Concerning() {
     return (
         <main>
             <section className="concerning">
-                <banner className="concerning-banner">
-                    <img src={ConcerningIllustration} alt="paysage" />
-                </banner>
+                <Banner />
                 <div className="concerning-collapse">
                     {kasaInformations.map((info) => (
                         <Collapse
