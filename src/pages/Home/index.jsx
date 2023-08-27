@@ -1,15 +1,12 @@
-import HomeIllustration from '../../assets/HomeIllustration.svg'
 import Card from '../../components/Card'
 import { appartments } from '../../datas/appartments'
+import Banner from '../../components/Banner'
 
 function Home() {
     return (
         <main>
             <section className="homecontainer">
-                <banner className="hometitle">
-                    <h1>Chez vous, partout et ailleurs</h1>
-                    <img src={HomeIllustration} alt="paysage" />
-                </banner>
+                <Banner />
                 <div className="cardscontainer">
                     {appartments.map((appartment) => (
                         <Card

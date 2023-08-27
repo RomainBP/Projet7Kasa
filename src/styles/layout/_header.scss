@@ -3,6 +3,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include smallmobile-only {
+        flex-direction: column;
+        gap: 20px;
+    }
     .navlink {
         padding: 10px 15px;
         color: $primary-color;

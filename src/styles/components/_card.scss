@@ -3,17 +3,19 @@
     box-sizing: border-box;
     flex-direction: column;
     justify-content: space-around;
-    padding: 15px;
     border-radius: 10px;
     background-color: $primary-color;
     background: linear-gradient(
         180deg,
-        $primary-color 0%,
-        rgba(59, 0, 0, 0.993) 100%
+        rgba(255, 255, 255, 0) 0%,
+        rgba(0, 0, 0, 0.5) 100%
     );
     width: 340px;
     height: 340px;
     transition: 200ms;
+    @include smallmobile-only {
+        width: 300px;
+    }
     &:hover {
         cursor: pointer;
         box-shadow: 2px 2px 10px #e2e3e9;
@@ -27,17 +29,25 @@
         box-sizing: border-box;
         flex-direction: column;
         justify-content: space-around;
-
+        position: relative;
+        border-radius: 10px;
         .cardimage {
-            height: 200px;
+            height: 100%;
             width: 100%;
             align-self: center;
+            object-fit: cover;
+            border-radius: 10px;
         }
         .cardtitle {
             color: white;
             font-size: 18px;
             font-weight: normal;
-            width: 100%;
+            width: 70%;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            z-index: 10;
         }
     }
 }

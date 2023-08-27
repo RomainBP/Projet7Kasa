@@ -6,10 +6,7 @@
 }
 
 body {
-    margin: 40px 100px;
+    margin: auto;
     max-width: 1440px;
-    @include mobile-only {
-        margin: 10px;
-    }
     font-weight: 100;
 }

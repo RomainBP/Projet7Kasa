@@ -1,4 +1,5 @@
 .homecontainer {
+    padding: 0 20px;
     max-width: 1440px;
     justify-content: center;
     display: flex;
@@ -8,51 +9,6 @@
     flex-direction: column;
     @include smallmobile-only {
         align-items: center;
-    }
-
-    .hometitle {
-        position: relative;
-        display: flex;
-        width: 100%;
-        height: 220px;
-        flex-shrink: 0;
-        border-radius: 25px;
-        background: #000;
-        mix-blend-mode: darken;
-        overflow: hidden;
-        align-items: center;
-        @include mobile-only {
-            height: 100px;
-        }
-        @include smallmobile-only {
-            width: 340px;
-        }
-        img {
-            flex: 1;
-            width: 100%;
-            position: absolute;
-            z-index: -1;
-            object-fit: cover;
-            opacity: 0.7;
-        }
-        h1 {
-            display: flex;
-            color: #fff;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            font-size: 48px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 142.6%; /* 68.448px */
-            z-index: 1;
-            @include mobile-only {
-                font-size: 24px;
-            }
-        }
     }
 
     .cardscontainer {
@@ -73,6 +29,7 @@
         }
         @include smallmobile-only {
             margin-top: 0px;
+            padding: 10px 0;
         }
     }
 }

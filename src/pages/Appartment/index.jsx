@@ -5,13 +5,16 @@ import Tag from '../../components/LocationPres/Tag'
 import Host from '../../components/LocationPres/Host'
 import Rating from '../../components/LocationPres/Rating'
 import Collapse from '../../components/Collapse'
+import { Navigate } from 'react-router-dom'
 
 function Appartment() {
     const { locationId } = useParams()
-    console.log(locationId)
     const location = appartments.find(
         (appartment) => locationId === appartment.id
     )
+    if (location === undefined) {
+        return <Navigate to="/404" />
+    }
     return (
         <main>
             <Carrousel pictures={location.pictures} />
