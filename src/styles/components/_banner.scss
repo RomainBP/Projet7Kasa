@@ -15,11 +15,13 @@
     margin: 20px auto;
 
     @include mobile-only {
-        height: 130px;
-        max-width: 95%;
+        height: 150px;
+        margin: 10px auto;
+        max-width: 100%;
     }
     @include smallmobile-only {
         margin: 10px auto;
+        max-width: 100%;
     }
     &_concerning {
         position: relative;
@@ -38,10 +40,8 @@
         mix-blend-mode: darken;
         overflow: hidden;
         align-items: center;
-        margin: 20px auto;
-        max-width: 95%;
         @include mobile-only {
-            height: 130px;
+            height: 150px;
         }
     }
 

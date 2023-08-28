@@ -1,7 +1,4 @@
 .locationpres {
-    @include mobile-only {
-        padding: 10px;
-    }
     .location {
         display: flex;
         justify-content: space-between;

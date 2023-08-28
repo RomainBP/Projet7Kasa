@@ -14,6 +14,12 @@
             left: 2%;
             height: 50px;
             width: 30px;
+            @include smallmobile-only {
+                height: 25px;
+            }
+            @include mobile-only {
+                height: 25px;
+            }
         }
 
         .arrow-right {
@@ -21,6 +27,12 @@
             right: 2%;
             height: 50px;
             width: 30px;
+            @include smallmobile-only {
+                height: 25px;
+            }
+            @include mobile-only {
+                height: 25px;
+            }
         }
     }
 
